@@ -17,7 +17,7 @@ struct ContentView: View {
                 )
                 .offset(x: offsetX, y: 0)
                 .onAppear {
-                    let baseAnimation = Animation.linear(duration: 3.0)
+                    let baseAnimation = Animation.linear(duration: 10.0)
                     let repeated = baseAnimation.repeatForever(autoreverses: false)
                     
                     withAnimation(repeated) {
@@ -30,7 +30,7 @@ struct ContentView: View {
                         offsetX = -100 // 다시 시작 위치로 초기화
                         
                         withAnimation(baseAnimation) {
-                            offsetX = 1000 // 다시 오른쪽으로 이동
+                            offsetX = 2000 // 다시 오른쪽으로 이동
                         }
                     }
                 }
