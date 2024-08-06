@@ -17,11 +17,11 @@ struct ContentView: View {
                 )
                 .offset(x: offsetX, y: 0)
                 .onAppear {
-                    let baseAnimation = Animation.linear(duration: 10.0)
+                    let baseAnimation = Animation.linear(duration: 5.0)
                     let repeated = baseAnimation.repeatForever(autoreverses: false)
                     
                     withAnimation(repeated) {
-                        offsetX = 1000 // 화면 오른쪽으로 통과하기 위한 임의의 값
+                        offsetX = 500 // 화면 오른쪽으로 통과하기 위한 임의의 값
                     }
                     
                     Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
