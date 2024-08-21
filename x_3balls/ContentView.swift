@@ -27,7 +27,7 @@ struct ContentView: View {
                     Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
                         randomNumber = Int.random(in: 1...100)
                         randomColor = Color.random()
-                        offsetX = -100 // 다시 시작 위치로 초기화
+                        offsetX = -20 // 다시 시작 위치로 초기화
                         
                         withAnimation(baseAnimation) {
                             offsetX = 2000 // 다시 오른쪽으로 이동
