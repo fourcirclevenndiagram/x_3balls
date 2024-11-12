@@ -30,7 +30,7 @@ struct ContentView: View {
                         offsetX = -20 // 다시 시작 위치로 초기화
                         
                         withAnimation(baseAnimation) {
-                            offsetX = 1950 // 다시 오른쪽으로 이동
+                            offsetX = 2000 // 다시 오른쪽으로 이동
                         }
                     }
                 }
